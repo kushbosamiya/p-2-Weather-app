@@ -1,0 +1,39 @@
+Form {
+  margin-top: 3rem;
+}
+
+Form input[name="city"],
+Form input[name="country"] {
+  background-color: transparent;
+  color: white;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 2rem;
+  width: 150px;
+}
+
+Form input:focus {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+Form input::-webkit-input-placeholder {
+  color: white !important;
+}
+
+/* weather */
+
+.parent_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+  position: absolute;
+  top: calc(60%);
+  left: calc(30%);
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .parent_cont
+  {
+    top: 70%;
+  }
+}
